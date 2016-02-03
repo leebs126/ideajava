@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+<!-- <servlet>
+ <servlet-name>sinit</servlet-name>
+     <init-param>초기화 파라미터라고 불리는 설정 값을 지정할 때 사용한다.
+          <param-name>email</param-name>초기화 파라미터의 이름을 지정한다.
+          <param-value>admin@jweb.com</param-value>초기화 파라미터의 값을 지정한다.
+     </init-param>
+     <init-param>초기화 파라미터라고 불리는 설정 값을 지정할 때 사용한다.
+          <param-name>tel</param-name>초기화 파라미터의 이름을 지정한다.
+          <param-value>010-111-2222</param-value>초기화 파라미터의 값을 지정한다.
+     </init-param>
+</servlet> -->
+<!-- <context-param>
+  <param-name>menu_member</param-name>
+  <param-value>회원등록  회원조회 회원수정</param-value>
+</context-param>
+<context-param>
+  <param-name>menu_order</param-name>
+  <param-value>주문조회  주문등록 주문수정 주문취소</param-value>
+</context-param>
+<context-param>
+  <param-name>menu_goods</param-name>
+  <param-value>상품조회  상품등록 상품수정 상품삭제</param-value>
+</context-param>
+ -->
+ <resource-ref>
+  <res-ref-name>
+    jdbc/Oracle11g
+  </res-ref-name>
+  <res-type>
+    javax.sql.DataSource
+  </res-type>
+  <res-auth>
+    Container
+  </res-auth>
+</resource-ref>
+</web-app>

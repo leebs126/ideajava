@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원 등록하기</title>
+<script type="text/javascript">
+function fn_sendMember(){
+	var frmMember=document.frmMember;
+	var id=frmMember.id.value;
+	var name=frmMember.name.value;
+	var height=frmMember.height.value;
+	var weight=frmMember.weight.value;
+	var age=frmMember.age.value;
+	//alert(id);
+	
+	//alert("aaa");
+	if(id.length==0 ||id==""){
+		alert("아이디는 필수입니다.");
+	}else if(name.length==0 ||name==""){
+		alert("이름은 필수입니다.");
+	}else if(height.length==0 ||height==""){
+		alert("키는 필수입니다.");
+	}else if(weight.length==0 ||weight==""){
+		alert("몸무게는 필수입니다.");
+		
+	}else if(age.length==0 ||age==""){
+		alert("나이는 필수입니다.");
+	}else{
+		frmMember.method="post";
+		frmMember.action="member4";
+		frmMember.submit();
+	} 
+
+}
+
+</script>
+</head>
+<body>
+  <form name="frmMember">
+  <table>
+   <th>
+     새 회원 등록하기
+   </th>
+  <tr>
+	<td>아이디</td>
+	<td><input type="text" name="id"></td>
+  </tr>
+  <tr>
+	<td>이름</td>
+	<td><input type="text" name="name"></td>
+  </tr>
+  <tr>
+	<td>키</td>
+	<td><input type="text" name="height"></td>
+  </tr>
+    <tr>
+	<td>몸무게</td>
+	<td><input type="text" name="weight"></td>
+  </tr>
+  <tr>
+	<td>나이</td>
+	<td><input type="text" name="age"></td>
+  </tr>
+  </table>
+   <input type="button" value="전송" onclick="fn_sendMember()">
+   <input type="reset" value="초기화">
+   <input  type="hidden" name="command" value="addMember" />	
+  </form>
+ </body>
+</html>
