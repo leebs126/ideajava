@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>계산기 창</title>
+</head>
+<body>
+ <h1>계산기 </h1>
+   <form name="frmCalc" method="get" action="calculator">
+	 첫번째 값:<input type="text" name="operand1">
+	 두번째 값:<input type="text" name="operand2">
+	 
+	 <select name="operation">
+		<option value="add" selected>+
+		<option value="subtract">-
+		<option value="multiply">*
+		<option value="divide">/
+	 </select>
+	 <br><br>
+		<input type="submit" value="전송" >  <input type="reset" value="초기화">
+  </form>
+</body>
+</html>
